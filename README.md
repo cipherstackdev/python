@@ -7,6 +7,7 @@ Small Python utilities for link checks, data cleanup, reporting, and admin workf
 | Script | Purpose |
 | --- | --- |
 | `link-verifier.py` | Checks URLs from files or command-line input and reports reachable, redirected, and failed links. |
+| `identity/access-review-pack.py` | Builds Markdown or JSON access review reports from user, role, and group CSV exports. |
 | `network/domain-posture-audit.py` | Audits public DNS, email security records, HTTPS TLS certificate health, and web security headers for a domain. |
 | `saml/saml-metadata-inspector.py` | Parses SAML metadata XML and summarizes entity ID, endpoints, NameID formats, and certificate details. |
 
@@ -24,6 +25,8 @@ pip install -r requirements.txt
 python link-verifier.py --url https://cipherstack.dev
 python link-verifier.py --file README.md --verbose
 python link-verifier.py docs/*.md --timeout 5 --workers 20
+python identity/access-review-pack.py --users identity/examples/users.csv --roles identity/examples/roles.csv --groups identity/examples/groups.csv
+python identity/access-review-pack.py --users identity/examples/users.csv --roles identity/examples/roles.csv --groups identity/examples/groups.csv --output identity-review.md
 python network/domain-posture-audit.py example.com
 python network/domain-posture-audit.py example.com --markdown --output report.md
 python saml/saml-metadata-inspector.py metadata.xml
