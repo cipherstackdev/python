@@ -1,6 +1,0 @@
-user_principal_name,display_name,department,account_enabled,mfa_registered,user_type,last_sign_in
-alex.admin@example.com,Alex Admin,IT,true,true,Member,2026-07-20T17:30:00Z
-casey.contractor@example.com,Casey Contractor,Operations,true,false,Guest,2026-06-01T14:15:00Z
-shared.scanner@example.com,Shared Scanner,Facilities,true,false,Member,
-retired.user@example.com,Retired User,Finance,true,true,Member,2026-03-15T10:00:00Z
-disabled.archive@example.com,Disabled Archive,Records,false,false,Member,2025-12-01T12:00:00Z

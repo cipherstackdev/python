@@ -1,0 +1,7 @@
+site,vlan_id,name,cidr,gateway,dhcp_start,dhcp_end,owner,purpose
+HQ,10,Staff,10.10.10.0/24,10.10.10.1,10.10.10.50,10.10.10.220,Infrastructure,Staff endpoints
+HQ,20,Voice,10.10.20.0/24,10.10.20.1,10.10.20.25,10.10.20.200,Infrastructure,Phones
+HQ,20,Duplicate Voice,10.10.20.0/24,10.10.20.1,10.10.20.30,10.10.20.210,Infrastructure,Duplicate row for demo
+Branch-A,30,Guest,10.20.30.0/24,10.20.31.1,10.20.30.25,10.20.30.200,Wireless,Guest Wi-Fi
+Branch-B,40,Cameras,10.20.30.128/25,10.20.30.129,10.20.30.150,10.20.30.220,Facilities,Security cameras
+Branch-C,50,Facilities,10.30.0.0/16,10.30.0.1,,,,
