@@ -1,0 +1,4 @@
+name,host,port,protocol,expected,owner,notes
+Public HTTPS,example.com,443,tls,open,Infrastructure,External website test
+Public DNS,1.1.1.1,53,tcp,open,Infrastructure,Resolver reachability test
+Closed Demo,example.com,65000,tcp,closed,Infrastructure,Expected closed demo port

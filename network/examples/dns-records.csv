@@ -1,0 +1,5 @@
+name,type,expected_contains,owner,notes
+example.com,A,,Infrastructure,Public website A record
+example.com,MX,,Infrastructure,Mail routing check
+_dmarc.example.com,TXT,v=DMARC1,Security,DMARC record check
+www.example.com,CNAME,example.com,Infrastructure,Alias validation
