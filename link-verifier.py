@@ -35,9 +35,9 @@ def extract_urls(text: str) -> set[str]:
 
 def urls_from_file(path: Path) -> set[str]:
     try:
-      return extract_urls(path.read_text(encoding="utf-8"))
+        return extract_urls(path.read_text(encoding="utf-8"))
     except UnicodeDecodeError:
-      return extract_urls(path.read_text(encoding="utf-8", errors="ignore"))
+        return extract_urls(path.read_text(encoding="utf-8", errors="ignore"))
 
 
 def check_url(session: requests.Session, url: str, timeout: int) -> LinkResult:
